@@ -432,12 +432,25 @@ nav {
   color: var(--muted);
 }
 
-/* ── Footer ── */
+/* ── Liens du Footer ── */
 footer {
   background: var(--ink);
   color: rgba(255,255,255,0.7);
   text-align: center;
   padding: 2.5rem 2rem;
+}
+
+/* ── Liens du Footer ── */
+footer a {
+  color: #e8c99a; /* Le beige que tu utilises déjà pour faire un joli contraste */
+  text-decoration: none; /* Enlève la ligne du bas par défaut */
+  transition: color 0.2s ease; /* Rend le changement de couleur fluide */
+}
+
+/* Petit bonus : un effet quand on passe la souris dessus */
+footer a:hover {
+  color: #ffffff; 
+  text-decoration: underline; /* Remet le soulignement au survol si tu veux justifier le nom de ta classe "link-underline" */
 }
 
 .footer-logo {
